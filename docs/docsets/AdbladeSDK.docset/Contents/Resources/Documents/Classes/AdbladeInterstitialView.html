@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>AdbladeInterstitialView Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/AdbladeInterstitialView" class="dashAnchor"></a>
+    <a title="AdbladeInterstitialView Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">AdbladeSDK Docs</a> (100% documented)</p>
+        <p class="header-right"><a href=""><img src="../img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">AdbladeSDK Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        AdbladeInterstitialView Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+          <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/AdbladeBannerView.html">AdbladeBannerView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AdbladeError.html">AdbladeError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AdbladeInterstitialView.html">AdbladeInterstitialView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AdbladeNativeView.html">AdbladeNativeView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AdbladeViewFactory.html">AdbladeViewFactory</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+          <a href="../Enums.html">Enums</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums.html#/s:O10AdbladeSDK13AdbladeAdType">AdbladeAdType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums.html#/s:O10AdbladeSDK17AdbladeErrorCodes">AdbladeErrorCodes</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums.html#/s:O10AdbladeSDK15AdbladeViewType">AdbladeViewType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+          <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/AdbladeDelegate.html">AdbladeDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/AdbladeView.html">AdbladeView</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>AdbladeInterstitialView</h1>
+            <p>The implementation of AdbladeView that handles interstitial ads.
+This is a subclass of AdbladeBannerView.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC10AdbladeSDK23AdbladeInterstitialView8viewTypeOS_15AdbladeViewType"></a>
+                    <a name="//apple_ref/swift/Property/viewType" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC10AdbladeSDK23AdbladeInterstitialView8viewTypeOS_15AdbladeViewType">viewType</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The view type.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="Swift">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">viewType</span><span class="p">:</span> <span class="kt">AdbladeViewType</span> <span class="o">=</span> <span class="o">.</span><span class="n">interstitial</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC10AdbladeSDK23AdbladeInterstitialView7adTypesGSaSi_"></a>
+                    <a name="//apple_ref/swift/Property/adTypes" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC10AdbladeSDK23AdbladeInterstitialView7adTypesGSaSi_">adTypes</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The AdbladeAdType that the view will be showing.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="Swift">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">adTypes</span><span class="p">:</span> <span class="p">[</span><span class="kt">Int</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="kt">AdbladeAdType</span><span class="o">.</span><span class="n">banner</span><span class="o">.</span><span class="n">rawValue</span><span class="p">,</span> <span class="kt">AdbladeAdType</span><span class="o">.</span><span class="n">mediumBanner</span><span class="o">.</span><span class="n">rawValue</span><span class="p">,</span> <span class="kt">AdbladeAdType</span><span class="o">.</span><span class="n">fullBanner</span><span class="o">.</span><span class="n">rawValue</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC10AdbladeSDK23AdbladeInterstitialView8delegateGSqPS_15AdbladeDelegate__"></a>
+                    <a name="//apple_ref/swift/Property/delegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC10AdbladeSDK23AdbladeInterstitialView8delegateGSqPS_15AdbladeDelegate__">delegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The AdbladeDelegate the view will use if the implementing app wants to
+track Adblade&rsquo;s events. This is optional.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="Swift">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">delegate</span><span class="p">:</span> <span class="kt">AdbladeDelegate</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC10AdbladeSDK23AdbladeInterstitialView11closeButtonGSqCSo8UIButton_"></a>
+                    <a name="//apple_ref/swift/Property/closeButton" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC10AdbladeSDK23AdbladeInterstitialView11closeButtonGSqCSo8UIButton_">closeButton</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The button used to close this view.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="Swift">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">@IBInspectable</span> <span class="kd">public</span> <span class="kd">private(set)</span> <span class="kd">final</span> <span class="k">var</span> <span class="nv">closeButton</span><span class="p">:</span> <span class="kt">UIButton</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC10AdbladeSDK23AdbladeInterstitialView11containerIdGSQSS_"></a>
+                    <a name="//apple_ref/swift/Property/containerId" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC10AdbladeSDK23AdbladeInterstitialView11containerIdGSQSS_">containerId</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The container id the view will use. This should be provided by Adblade.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="Swift">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">@IBInspectable</span> <span class="kd">public</span> <span class="kd">final</span> <span class="k">var</span> <span class="nv">containerId</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2015 <a class="link" href="http://www.adblade.com" target="_blank" rel="external">Adblade</a>. All rights reserved. (Last updated: 2015-08-03)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.2.2</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
