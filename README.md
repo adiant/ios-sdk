@@ -12,7 +12,7 @@ Coming Soon
 
 ## Changes
 
-View all changes in [our changelog](https://github.com/adiant/ios-sdk/blob/master/CHANGELOG.md)
+View all changes in [our changelog](https://github.com/adiant/ios-sdk/blob/master/CHANGELOG.md).
 
 ## Requirements
 
@@ -20,4 +20,6 @@ We currently require iOS 8.4, but are working on expanding this to work with old
 
 ## Help
 
-Coming Soon
+Visit our [SDK documentation](http://adiant.github.io/ios-sdk/index.html) or our [wiki](https://github.com/adiant/ios-sdk/wiki) for more indormation. 
+
+Please report any bugs or feature requests using GitHub. 
