@@ -6,15 +6,19 @@
 	<dict>
 		<key>AdbladeBannerView.nib</key>
 		<data>
-		7Sr2rQt9r0HbQTFtqKHduBuZi5s=
+		J1+aIIfjldW3Cr2dVu6lcCmYdzg=
 		</data>
 		<key>AdbladeInterstitialView.nib</key>
 		<data>
-		H8ZNa12vd4wYZSRwhhD//A2bviQ=
+		uNaI4yY3x4xqwCBfNB3jMWffKzY=
 		</data>
 		<key>AdbladeNativeView.nib</key>
 		<data>
-		KCwLnc4+5ZiBzQ23MUMHS94vr+M=
+		m+9sAk0eIPVe7S1ZNleBLkJxuXI=
+		</data>
+		<key>AdbladeSlideshowView.nib</key>
+		<data>
+		Tld7KJYqcjDl6S3CUKAPJwQ6/7Y=
 		</data>
 		<key>Debug-Config.plist</key>
 		<data>
@@ -22,7 +26,7 @@
 		</data>
 		<key>Headers/AdbladeSDK-Swift.h</key>
 		<data>
-		Pees4/8rsnv6u3zdCnsa65ddXME=
+		Q344xCu7cmAu/JH7ARw3OdLuDD0=
 		</data>
 		<key>Headers/SDK.h</key>
 		<data>
@@ -30,7 +34,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		no3pIFBmjwIUo+ZzMZh4VQ5CkeI=
+		QSiA6DgcgLHmRFsQL+UkJWVhER4=
 		</data>
 		<key>LICENSE</key>
 		<data>
@@ -38,19 +42,19 @@
 		</data>
 		<key>Modules/AdbladeSDK.swiftmodule/arm.swiftdoc</key>
 		<data>
-		Qb7wgamCf6BN5L/VvYUIQjMmqPs=
+		qpBPoBfHq0+piWb/ZQ9D3B8Xg+Q=
 		</data>
 		<key>Modules/AdbladeSDK.swiftmodule/arm.swiftmodule</key>
 		<data>
-		AG7WPvUqSQeLd4zdyAWvocX3Sy0=
+		h55NUGtSdLObBDZY3G33e5h8Ubo=
 		</data>
 		<key>Modules/AdbladeSDK.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		kZIOCUCehHvBuWu65aafUcqn0rI=
+		IPeCgkFcms/SBNeOolEAaBi7xS8=
 		</data>
 		<key>Modules/AdbladeSDK.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		j/pCj/RLgaDEG6p58ZpbhKKWPDY=
+		UdZCXUBw7MymUOHa9OPhQPLbOxo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -62,22 +66,26 @@
 		</data>
 		<key>Release-Config.plist</key>
 		<data>
-		QuvfiAJPnH67yEkIMCBmNf+llq8=
+		v73CKueHdFJijq7MSiJoW+dRxY8=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
 		<key>AdbladeBannerView.nib</key>
 		<data>
-		7Sr2rQt9r0HbQTFtqKHduBuZi5s=
+		J1+aIIfjldW3Cr2dVu6lcCmYdzg=
 		</data>
 		<key>AdbladeInterstitialView.nib</key>
 		<data>
-		H8ZNa12vd4wYZSRwhhD//A2bviQ=
+		uNaI4yY3x4xqwCBfNB3jMWffKzY=
 		</data>
 		<key>AdbladeNativeView.nib</key>
 		<data>
-		KCwLnc4+5ZiBzQ23MUMHS94vr+M=
+		m+9sAk0eIPVe7S1ZNleBLkJxuXI=
+		</data>
+		<key>AdbladeSlideshowView.nib</key>
+		<data>
+		Tld7KJYqcjDl6S3CUKAPJwQ6/7Y=
 		</data>
 		<key>Debug-Config.plist</key>
 		<data>
@@ -85,7 +93,7 @@
 		</data>
 		<key>Headers/AdbladeSDK-Swift.h</key>
 		<data>
-		Pees4/8rsnv6u3zdCnsa65ddXME=
+		Q344xCu7cmAu/JH7ARw3OdLuDD0=
 		</data>
 		<key>Headers/SDK.h</key>
 		<data>
@@ -97,19 +105,19 @@
 		</data>
 		<key>Modules/AdbladeSDK.swiftmodule/arm.swiftdoc</key>
 		<data>
-		Qb7wgamCf6BN5L/VvYUIQjMmqPs=
+		qpBPoBfHq0+piWb/ZQ9D3B8Xg+Q=
 		</data>
 		<key>Modules/AdbladeSDK.swiftmodule/arm.swiftmodule</key>
 		<data>
-		AG7WPvUqSQeLd4zdyAWvocX3Sy0=
+		h55NUGtSdLObBDZY3G33e5h8Ubo=
 		</data>
 		<key>Modules/AdbladeSDK.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		kZIOCUCehHvBuWu65aafUcqn0rI=
+		IPeCgkFcms/SBNeOolEAaBi7xS8=
 		</data>
 		<key>Modules/AdbladeSDK.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		j/pCj/RLgaDEG6p58ZpbhKKWPDY=
+		UdZCXUBw7MymUOHa9OPhQPLbOxo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -121,7 +129,7 @@
 		</data>
 		<key>Release-Config.plist</key>
 		<data>
-		QuvfiAJPnH67yEkIMCBmNf+llq8=
+		v73CKueHdFJijq7MSiJoW+dRxY8=
 		</data>
 	</dict>
 	<key>rules</key>

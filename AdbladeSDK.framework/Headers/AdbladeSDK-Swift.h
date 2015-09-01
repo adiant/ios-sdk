@@ -93,12 +93,14 @@ typedef struct _NSZone NSZone;
 
 /// Different types of ads.
 ///
-/// <ul><li><dl><dt>native:</dt><dd><ul><li><p>298x224 image</p></li><li><p>title</p></li><li><p>description</p></li><li><p>display name</p></li></ul></dd></dl></li><li><p>mediumRectangle: 300x250</p></li><li><p>leaderboard: 728x90</p></li><li><p>banner: 320x60</p></li><li><p>mediumBanner: 320x100</p></li><li><p>fullBanner: 468x60</p></li></ul>
+/// <ul><li><dl><dt>native:</dt><dd><ul><li><p>298x224 image</p></li><li><p>title</p></li><li><p>description</p></li><li><p>display name</p></li></ul></dd></dl></li><li><p>mediumRectangle: 300x250</p></li><li><p>richMediaMediumRectangle: 300x250 Rich Media</p></li><li><p>leaderboard: 728x90</p></li><li><p>richMediaLeaderboard: 728x90 Rich Media</p></li><li><p>banner: 320x50</p></li><li><p>mediumBanner: 320x100</p></li><li><p>fullBanner: 468x60</p></li><li><p>slideshow - a collection of the other ad types that can be rotated through</p></li></ul>
 /// If you do not specify ad ad type, one or more will be chosen for you based on the selected view. If this
 /// is the case, the 300x250 ones can be grouped together and the 728x90 ones can be grouped together. Only
 /// one ad will be returned, but it can be of any of those types. 
 typedef SWIFT_ENUM(NSInteger, AdbladeAdType) {
   AdbladeAdTypenative = 1,
+  AdbladeAdTyperichMediaMediumRectangle = 4,
+  AdbladeAdTyperichMediaLeaderboard = 6,
   AdbladeAdTypemediumRectangle = 14,
   AdbladeAdTypeleaderboard = 15,
   AdbladeAdTypebanner = 77,
@@ -245,6 +247,65 @@ SWIFT_CLASS("_TtC10AdbladeSDK23AdbladeInterstitialView")
 - (SWIFT_NULLABILITY(nonnull) instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class NSBundle;
+
+
+/// A controller for interstitial views. 
+SWIFT_CLASS("_TtC10AdbladeSDK33AdbladeInterstitialViewController")
+@interface AdbladeInterstitialViewController : UIViewController <AdbladeDelegate>
+
+/// The container id used to show ads in the view.
+@property (nonatomic, copy) NSString * __nonnull containerId;
+
+/// Constructor
+///
+/// \param aDecoder 
+- (SWIFT_NULLABILITY(nonnull) instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+
+/// Constructor
+///
+/// \param nibNameOrNil 
+///
+/// \param nibBundleOrNil 
+- (SWIFT_NULLABILITY(nonnull) instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+
+/// Loads the view.
+- (void)loadView;
+
+/// This executes when the ad is successfully received and ready to be shown.
+///
+/// \param view The AdbladeView that the ad will be shown in.
+- (void)didReceiveAd:(id <AdbladeView> __nonnull)view;
+
+/// This executes when the ad was not successfully received.
+///
+/// \param view The AdbladeView that the ad will be shown in.
+///
+/// \param error The NSError object that explains what went wrong.
+- (void)didHaveError:(id <AdbladeView> __nonnull)view error:(AdbladeError * __nonnull)error;
+
+/// This executes immediately before an AdbladeInterstitialView is going to be shown.
+///
+/// \param view The AdbladeInterstitialView that the ad will be shown in.
+- (void)willShowScreen:(AdbladeInterstitialView * __nonnull)view;
+
+/// This executes immediately before an AdbladeInterstitialView is going to be closed.
+///
+/// \param view The AdbladeInterstitialView that the ad will be shown in.
+- (void)willDismissScreen:(AdbladeInterstitialView * __nonnull)view;
+
+/// This executes immediately after an AdbladeInterstitialView is closed.
+///
+/// \param view The AdbladeInterstitialView that the ad will be shown in.
+- (void)didDismissScreen:(AdbladeInterstitialView * __nonnull)view;
+
+/// This executes immediately before the user leaves your application. This will
+/// be run when a tap event occurs on an ad.
+///
+/// \param view The AdbladeView that the ad will be shown in.
+- (void)willLeaveApplication:(id <AdbladeView> __nonnull)view;
+@end
+
 
 
 /// The implementation of AdbladeView that handles native ads.
@@ -277,6 +338,18 @@ SWIFT_CLASS("_TtC10AdbladeSDK17AdbladeNativeView")
 /// \returns The size to change that fits the subviews.
 - (CGSize)sizeThatFits:(CGSize)size;
 - (SWIFT_NULLABILITY(nonnull) instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (SWIFT_NULLABILITY(nonnull) instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
+/// View for slideshow interstitial ads.
+SWIFT_CLASS("_TtC10AdbladeSDK20AdbladeSlideshowView")
+@interface AdbladeSlideshowView : UICollectionView
+
+/// Constructor
+///
+/// \param aDecoder 
 - (SWIFT_NULLABILITY(nonnull) instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -326,14 +399,14 @@ SWIFT_CLASS("_TtC10AdbladeSDK18AdbladeViewFactory")
 ///
 /// \param adType The type of ad that you want to display.
 ///
-/// \returns an object that implements AdbladeView or nil
+/// \returns an object that implements UIView or nil
 + (id <AdbladeView> __nullable)createView:(NSString * __nonnull)containerId adType:(enum AdbladeAdType)adType;
 @end
 
 
 /// Different types of views.
 ///
-/// <ul><li><dl><dt>banner: allowed ad types</dt><dd><ul><li><p>banner</p></li><li><p>mediumBanner</p></li><li><p>fullBanner</p></li></ul></dd></dl></li><li><dl><dt>interstitial: allowed ad types</dt><dd><ul><li><p>mediumRectangle</p></li><li><p>leaderboard</p></li></ul></dd></dl></li><li><dl><dt>native</dt><dd><ul><li><p>native</p></li></ul></dd></dl></li></ul>
+/// <ul><li><dl><dt>banner: allowed ad types</dt><dd><ul><li><p>banner</p></li><li><p>mediumBanner</p></li><li><p>fullBanner</p></li></ul></dd></dl></li><li><dl><dt>interstitial: allowed ad types</dt><dd><ul><li><p>mediumRectangle</p></li><li><p>leaderboard</p></li><li><p>slideshow</p></li></ul></dd></dl></li><li><dl><dt>native</dt><dd><ul><li><p>native</p></li></ul></dd></dl></li></ul>
 typedef SWIFT_ENUM(NSInteger, AdbladeViewType) {
   AdbladeViewTypebanner = 1,
   AdbladeViewTypeinterstitial = 2,
