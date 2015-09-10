@@ -1,0 +1,2 @@
+AdbladeNativeAdapter.swift
+	@objc public final class AdbladeNativeAdapter
