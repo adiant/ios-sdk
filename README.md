@@ -16,7 +16,7 @@ View all changes in [our changelog](https://github.com/adiant/ios-sdk/blob/maste
 
 ## Requirements
 
-We currently require iOS 8.4, but are working on expanding this to work with older versions of iOS. 
+We currently require iOS 8.0, but are working on expanding this to work with older versions of iOS. 
 
 ## Help
 
