@@ -129,6 +129,9 @@ SWIFT_PROTOCOL("_TtP10AdbladeSDK11AdbladeView_")
 /// The AdViewDelegate the view will use if the implementing app wants to
 /// track Adblade's events. This is optional.
 @property (nonatomic) id <AdbladeDelegate> __nullable delegate;
+
+/// Load the ad into the view.
+- (void)loadAd;
 @end
 
 @class NSCoder;
@@ -150,10 +153,14 @@ SWIFT_CLASS("_TtC10AdbladeSDK17AdbladeBannerView")
 
 /// The container id the view will use. This should be provided by Adblade.
 @property (nonatomic, copy) NSString * __null_unspecified containerId;
+
+/// Load the ad into the view.
+- (void)loadAd;
 - (SWIFT_NULLABILITY(nonnull) instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (SWIFT_NULLABILITY(nonnull) instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class NSURL;
 @class AdbladeError;
 @class AdbladeInterstitialView;
 
@@ -161,18 +168,16 @@ SWIFT_CLASS("_TtC10AdbladeSDK17AdbladeBannerView")
 /// This can be used if you want to track any events during the process. All methods are
 /// optional and you only have to implement what you need.
 ///
-/// class ViewController: UIViewController, AdbladeDelegate {
-/// //...
+/// <dl><dt>class ViewController: UIViewController, AdbladeDelegate {</dt><dd><p>//...
 /// adbladeView.delegate = self
-/// //...
-///
-/// func didReceiveAd(view: AdbladeView) {
-/// //...
-/// }
+/// //...</p><dl><dt>func didReceiveAd(view: AdbladeView) {</dt><dd><p>//...</p></dd></dl><p>}</p></dd></dl>
 /// }
 SWIFT_PROTOCOL("_TtP10AdbladeSDK15AdbladeDelegate_")
 @protocol AdbladeDelegate
 @optional
+
+/// Fires when request is sent to ad server.
+- (void)willSendRequest:(id <AdbladeView> __nonnull)view url:(NSURL * __nonnull)url;
 
 /// This executes when the ad is successfully received and ready to be shown.
 ///
@@ -243,6 +248,9 @@ SWIFT_CLASS("_TtC10AdbladeSDK23AdbladeInterstitialView")
 
 /// The container id the view will use. This should be provided by Adblade.
 @property (nonatomic, copy) NSString * __null_unspecified containerId;
+
+/// Load the ad into the view.
+- (void)loadAd;
 - (SWIFT_NULLABILITY(nonnull) instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (SWIFT_NULLABILITY(nonnull) instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -307,6 +315,14 @@ SWIFT_CLASS("_TtC10AdbladeSDK33AdbladeInterstitialViewController")
 @end
 
 
+SWIFT_CLASS("_TtC10AdbladeSDK20AdbladeNativeAdapter")
+@interface AdbladeNativeAdapter
+
+/// The click URL of the ad.
+@property (nonatomic, readonly) NSURL * __nonnull clickUrl;
+@end
+
+
 
 /// The implementation of AdbladeView that handles native ads.
 SWIFT_CLASS("_TtC10AdbladeSDK17AdbladeNativeView")
@@ -321,6 +337,9 @@ SWIFT_CLASS("_TtC10AdbladeSDK17AdbladeNativeView")
 /// The AdbladeDelegate the view will use if the implementing app wants to
 /// track Adblade's events. This is optional.
 @property (nonatomic) id <AdbladeDelegate> __nullable delegate;
+
+/// The exposed native ad for external libraries.
+@property (nonatomic, readonly) AdbladeNativeAdapter * __nullable adAdapter;
 
 /// The container id the view will use. This should be provided by Adblade.
 @property (nonatomic, copy) NSString * __null_unspecified containerId;
@@ -337,6 +356,9 @@ SWIFT_CLASS("_TtC10AdbladeSDK17AdbladeNativeView")
 ///
 /// \returns The size to change that fits the subviews.
 - (CGSize)sizeThatFits:(CGSize)size;
+
+/// Load the ad into the view.
+- (void)loadAd;
 - (SWIFT_NULLABILITY(nonnull) instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (SWIFT_NULLABILITY(nonnull) instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
