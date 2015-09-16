@@ -1,3 +1,9 @@
+## Version 1.2.1 (September 16, 2016)
+
+- add close button to ScrollRoll
+- center banner interstitials
+- completely remove autoload
+
 ## Version 1.2.0 (September 10, 2015)
 
 - add support for iOS7

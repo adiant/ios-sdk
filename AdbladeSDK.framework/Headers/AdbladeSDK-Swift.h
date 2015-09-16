@@ -280,6 +280,12 @@ SWIFT_CLASS("_TtC10AdbladeSDK33AdbladeInterstitialViewController")
 /// Loads the view.
 - (void)loadView;
 
+/// Load the ad into the view.
+- (void)loadAd;
+
+/// Fires when request is sent to ad server.
+- (void)willSendRequest:(id <AdbladeView> __nonnull)view url:(NSURL * __nonnull)url;
+
 /// This executes when the ad is successfully received and ready to be shown.
 ///
 /// \param view The AdbladeView that the ad will be shown in.
