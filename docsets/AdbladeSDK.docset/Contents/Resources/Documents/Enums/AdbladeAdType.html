@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>AdbladeDelegate Protocol Reference</title>
+    <title>AdbladeAdType Enum Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -9,8 +9,8 @@
     <script src="../js/jazzy.js" defer></script>
   </head>
   <body>
-    <a name="//apple_ref/swift/Protocol/AdbladeDelegate" class="dashAnchor"></a>
-    <a title="AdbladeDelegate Protocol Reference"></a>
+    <a name="//apple_ref/swift/Enum/AdbladeAdType" class="dashAnchor"></a>
+    <a title="AdbladeAdType Enum Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html">AdbladeSDK Docs</a> (74% documented)</p>
@@ -20,7 +20,7 @@
       <p id="breadcrumbs">
         <a href="../index.html">AdbladeSDK Reference</a>
         <img id="carat" src="../img/carat.png" />
-        AdbladeDelegate Protocol Reference
+        AdbladeAdType Enum Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -82,27 +82,37 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>AdbladeDelegate</h1>
+            <h1>AdbladeAdType</h1>
               <div class="declaration">
                 <div class="Swift">
-                  <pre class="highlight"><code><span class="k">@objc</span> <span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">AdbladeDelegate</span></code></pre>
+                  <pre class="highlight"><code><span class="k">@objc</span> <span class="kd">public</span> <span class="kd">enum</span> <span class="kt">AdbladeAdType</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
 
                 </div>
               </div>
-            <p>This can be used if you want to track any events during the process. All methods are
-optional and you only have to implement what you need.</p>
+            <p>Different types of ads.</p>
 
-<p>class ViewController: UIViewController, AdbladeDelegate {
-    //&hellip;
-    adbladeView.delegate = self
-    //&hellip;</p>
+<ul>
+<li>native:
 
-<pre class="highlight plaintext"><code>func didReceiveAd(view: AdbladeView) {
-    //...
-}
-</code></pre>
+<ul>
+<li>298x224 image</li>
+<li>title</li>
+<li>description</li>
+<li>display name</li>
+</ul></li>
+<li>mediumRectangle: 300x250</li>
+<li>richMediaMediumRectangle: 300x250 Rich Media</li>
+<li>leaderboard: 728x90</li>
+<li>richMediaLeaderboard: 728x90 Rich Media</li>
+<li>banner: 320x50</li>
+<li>mediumBanner: 320x100</li>
+<li>fullBanner: 468x60</li>
+<li>slideshow - a collection of the other ad types that can be rotated through</li>
+</ul>
 
-<p>}</p>
+<p>If you do not specify ad ad type, one or more will be chosen for you based on the selected view. If this
+is the case, the 300x250 ones can be grouped together and the 728x90 ones can be grouped together. Only
+one ad will be returned, but it can be of any of those types.</p>
 
           </section>
           <section class="section task-group-section">
@@ -111,9 +121,9 @@ optional and you only have to implement what you need.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FP10AdbladeSDK15AdbladeDelegate15willSendRequestuRq_S0__Fq_FTPS_11AdbladeView_3urlCSo5NSURL_T_"></a>
-                    <a name="//apple_ref/swift/Method/willSendRequest(_:url:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FP10AdbladeSDK15AdbladeDelegate15willSendRequestuRq_S0__Fq_FTPS_11AdbladeView_3urlCSo5NSURL_T_">willSendRequest(_:url:)</a>
+                    <a name="/s:FO10AdbladeSDK13AdbladeAdType6nativeFMS0_S0_"></a>
+                    <a name="//apple_ref/swift/Element/native" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FO10AdbladeSDK13AdbladeAdType6nativeFMS0_S0_">native</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -121,26 +131,30 @@ optional and you only have to implement what you need.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Fires when request is sent to ad server.</p>
+                        <p>Undocumented</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="Swift">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">willSendRequest</span><span class="p">(</span><span class="nv">view</span><span class="p">:</span> <span class="kt">AdbladeView</span><span class="p">,</span> <span class="nv">url</span><span class="p">:</span> <span class="kt">NSURL</span><span class="p">)</span></code></pre>
+                          <pre class="highlight"><code><span class="k">@objc</span> <span class="kd">public</span> <span class="kd">enum</span> <span class="kt">AdbladeAdType</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
 
                         </div>
                       </div>
                     </section>
                   </div>
                 </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FP10AdbladeSDK15AdbladeDelegate12didReceiveAduRq_S0__Fq_FPS_11AdbladeView_T_"></a>
-                    <a name="//apple_ref/swift/Method/didReceiveAd(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FP10AdbladeSDK15AdbladeDelegate12didReceiveAduRq_S0__Fq_FPS_11AdbladeView_T_">didReceiveAd(_:)</a>
+                    <a name="/s:FO10AdbladeSDK13AdbladeAdType24richMediaMediumRectangleFMS0_S0_"></a>
+                    <a name="//apple_ref/swift/Element/richMediaMediumRectangle" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FO10AdbladeSDK13AdbladeAdType24richMediaMediumRectangleFMS0_S0_">richMediaMediumRectangle</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -148,28 +162,30 @@ optional and you only have to implement what you need.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>This executes when the ad is successfully received and ready to be shown.</p>
-
-<p>:param: view The AdbladeView that the ad will be shown in.</p>
+                        <p>Undocumented</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="Swift">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">didReceiveAd</span><span class="p">(</span><span class="nv">view</span><span class="p">:</span> <span class="kt">AdbladeView</span><span class="p">)</span></code></pre>
+                          <pre class="highlight"><code><span class="k">@objc</span> <span class="kd">public</span> <span class="kd">enum</span> <span class="kt">AdbladeAdType</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
 
                         </div>
                       </div>
                     </section>
                   </div>
                 </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FP10AdbladeSDK15AdbladeDelegate12didHaveErroruRq_S0__Fq_FTPS_11AdbladeView_5errorCS_12AdbladeError_T_"></a>
-                    <a name="//apple_ref/swift/Method/didHaveError(_:error:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FP10AdbladeSDK15AdbladeDelegate12didHaveErroruRq_S0__Fq_FTPS_11AdbladeView_5errorCS_12AdbladeError_T_">didHaveError(_:error:)</a>
+                    <a name="/s:FO10AdbladeSDK13AdbladeAdType20richMediaLeaderboardFMS0_S0_"></a>
+                    <a name="//apple_ref/swift/Element/richMediaLeaderboard" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FO10AdbladeSDK13AdbladeAdType20richMediaLeaderboardFMS0_S0_">richMediaLeaderboard</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -177,29 +193,30 @@ optional and you only have to implement what you need.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>This executes when the ad was not successfully received.</p>
-
-<p>:param: view The AdbladeView that the ad will be shown in.
-:param: error The NSError object that explains what went wrong.</p>
+                        <p>Undocumented</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="Swift">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">didHaveError</span><span class="p">(</span><span class="nv">view</span><span class="p">:</span> <span class="kt">AdbladeView</span><span class="p">,</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">AdbladeError</span><span class="p">)</span></code></pre>
+                          <pre class="highlight"><code><span class="k">@objc</span> <span class="kd">public</span> <span class="kd">enum</span> <span class="kt">AdbladeAdType</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
 
                         </div>
                       </div>
                     </section>
                   </div>
                 </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FP10AdbladeSDK15AdbladeDelegate14willShowScreenuRq_S0__Fq_FCS_23AdbladeInterstitialViewT_"></a>
-                    <a name="//apple_ref/swift/Method/willShowScreen(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FP10AdbladeSDK15AdbladeDelegate14willShowScreenuRq_S0__Fq_FCS_23AdbladeInterstitialViewT_">willShowScreen(_:)</a>
+                    <a name="/s:FO10AdbladeSDK13AdbladeAdType15mediumRectangleFMS0_S0_"></a>
+                    <a name="//apple_ref/swift/Element/mediumRectangle" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FO10AdbladeSDK13AdbladeAdType15mediumRectangleFMS0_S0_">mediumRectangle</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -207,28 +224,30 @@ optional and you only have to implement what you need.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>This executes immediately before an AdbladeInterstitialView is going to be shown.</p>
-
-<p>:param: view The AdbladeInterstitialView that the ad will be shown in.</p>
+                        <p>Undocumented</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="Swift">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">willShowScreen</span><span class="p">(</span><span class="nv">view</span><span class="p">:</span> <span class="kt">AdbladeInterstitialView</span><span class="p">)</span></code></pre>
+                          <pre class="highlight"><code><span class="k">@objc</span> <span class="kd">public</span> <span class="kd">enum</span> <span class="kt">AdbladeAdType</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
 
                         </div>
                       </div>
                     </section>
                   </div>
                 </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FP10AdbladeSDK15AdbladeDelegate17willDismissScreenuRq_S0__Fq_FCS_23AdbladeInterstitialViewT_"></a>
-                    <a name="//apple_ref/swift/Method/willDismissScreen(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FP10AdbladeSDK15AdbladeDelegate17willDismissScreenuRq_S0__Fq_FCS_23AdbladeInterstitialViewT_">willDismissScreen(_:)</a>
+                    <a name="/s:FO10AdbladeSDK13AdbladeAdType11leaderboardFMS0_S0_"></a>
+                    <a name="//apple_ref/swift/Element/leaderboard" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FO10AdbladeSDK13AdbladeAdType11leaderboardFMS0_S0_">leaderboard</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -236,28 +255,30 @@ optional and you only have to implement what you need.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>This executes immediately before an AdbladeInterstitialView is going to be closed.</p>
-
-<p>:param: view The AdbladeInterstitialView that the ad will be shown in.</p>
+                        <p>Undocumented</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="Swift">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">willDismissScreen</span><span class="p">(</span><span class="nv">view</span><span class="p">:</span> <span class="kt">AdbladeInterstitialView</span><span class="p">)</span></code></pre>
+                          <pre class="highlight"><code><span class="k">@objc</span> <span class="kd">public</span> <span class="kd">enum</span> <span class="kt">AdbladeAdType</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
 
                         </div>
                       </div>
                     </section>
                   </div>
                 </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FP10AdbladeSDK15AdbladeDelegate16didDismissScreenuRq_S0__Fq_FCS_23AdbladeInterstitialViewT_"></a>
-                    <a name="//apple_ref/swift/Method/didDismissScreen(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FP10AdbladeSDK15AdbladeDelegate16didDismissScreenuRq_S0__Fq_FCS_23AdbladeInterstitialViewT_">didDismissScreen(_:)</a>
+                    <a name="/s:FO10AdbladeSDK13AdbladeAdType6bannerFMS0_S0_"></a>
+                    <a name="//apple_ref/swift/Element/banner" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FO10AdbladeSDK13AdbladeAdType6bannerFMS0_S0_">banner</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -265,28 +286,30 @@ optional and you only have to implement what you need.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>This executes immediately after an AdbladeInterstitialView is closed.</p>
-
-<p>:param: view The AdbladeInterstitialView that the ad will be shown in.</p>
+                        <p>Undocumented</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="Swift">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">didDismissScreen</span><span class="p">(</span><span class="nv">view</span><span class="p">:</span> <span class="kt">AdbladeInterstitialView</span><span class="p">)</span></code></pre>
+                          <pre class="highlight"><code><span class="k">@objc</span> <span class="kd">public</span> <span class="kd">enum</span> <span class="kt">AdbladeAdType</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
 
                         </div>
                       </div>
                     </section>
                   </div>
                 </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FP10AdbladeSDK15AdbladeDelegate20willLeaveApplicationuRq_S0__Fq_FPS_11AdbladeView_T_"></a>
-                    <a name="//apple_ref/swift/Method/willLeaveApplication(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FP10AdbladeSDK15AdbladeDelegate20willLeaveApplicationuRq_S0__Fq_FPS_11AdbladeView_T_">willLeaveApplication(_:)</a>
+                    <a name="/s:FO10AdbladeSDK13AdbladeAdType9slideshowFMS0_S0_"></a>
+                    <a name="//apple_ref/swift/Element/slideshow" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FO10AdbladeSDK13AdbladeAdType9slideshowFMS0_S0_">slideshow</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -294,17 +317,76 @@ optional and you only have to implement what you need.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>This executes immediately before the user leaves your application. This will
-be run when a tap event occurs on an ad.</p>
-
-<p>:param: view The AdbladeView that the ad will be shown in.</p>
+                        <p>Undocumented</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="Swift">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">willLeaveApplication</span><span class="p">(</span><span class="nv">view</span><span class="p">:</span> <span class="kt">AdbladeView</span><span class="p">)</span></code></pre>
+                          <pre class="highlight"><code><span class="k">@objc</span> <span class="kd">public</span> <span class="kd">enum</span> <span class="kt">AdbladeAdType</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FO10AdbladeSDK13AdbladeAdType12mediumBannerFMS0_S0_"></a>
+                    <a name="//apple_ref/swift/Element/mediumBanner" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FO10AdbladeSDK13AdbladeAdType12mediumBannerFMS0_S0_">mediumBanner</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="Swift">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">@objc</span> <span class="kd">public</span> <span class="kd">enum</span> <span class="kt">AdbladeAdType</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FO10AdbladeSDK13AdbladeAdType10fullBannerFMS0_S0_"></a>
+                    <a name="//apple_ref/swift/Element/fullBanner" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FO10AdbladeSDK13AdbladeAdType10fullBannerFMS0_S0_">fullBanner</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="Swift">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">@objc</span> <span class="kd">public</span> <span class="kd">enum</span> <span class="kt">AdbladeAdType</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
 
                         </div>
                       </div>

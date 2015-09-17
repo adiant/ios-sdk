@@ -13,8 +13,7 @@
     <a title="AdbladeViewFactory Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">AdbladeSDK Docs</a> (98% documented)</p>
-        <p class="header-right"><a href=""><img src="../img/gh.png"/>View on GitHub</a></p>
+        <p><a href="../index.html">AdbladeSDK Docs</a> (74% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -43,9 +42,6 @@
                 <a href="../Classes/AdbladeInterstitialViewController.html">AdbladeInterstitialViewController</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Classes/AdbladeNativeAdapter.html">AdbladeNativeAdapter</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Classes/AdbladeNativeView.html">AdbladeNativeView</a>
               </li>
               <li class="nav-group-task">
@@ -60,13 +56,13 @@
           <a href="../Enums.html">Enums</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Enums.html#/s:O10AdbladeSDK13AdbladeAdType">AdbladeAdType</a>
+                <a href="../Enums/AdbladeAdType.html">AdbladeAdType</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Enums.html#/s:O10AdbladeSDK17AdbladeErrorCodes">AdbladeErrorCodes</a>
+                <a href="../Enums/AdbladeErrorCodes.html">AdbladeErrorCodes</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Enums.html#/s:O10AdbladeSDK15AdbladeViewType">AdbladeViewType</a>
+                <a href="../Enums/AdbladeViewType.html">AdbladeViewType</a>
               </li>
             </ul>
           </li>
@@ -87,6 +83,12 @@
         <section>
           <section class="section">
             <h1>AdbladeViewFactory</h1>
+              <div class="declaration">
+                <div class="Swift">
+                  <pre class="highlight"><code><span class="k">@objc</span> <span class="kd">public</span> <span class="kd">class</span> <span class="kt">AdbladeViewFactory</span><span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                </div>
+              </div>
             <p>Create views for Adblade Ads</p>
 
           </section>
@@ -108,6 +110,12 @@
                       <div class="abstract">
                         <p>Create a view for Adblade Ads</p>
 
+<p>:param: containerId The container id used to fetch the ads. This should be provided by Adblade.
+:param: adSize The size of the ad that you want to show (e.g. <q>300x250</q>)
+:param: delegate An (optional) implementation of AdbladeDelegate.</p>
+
+<p>:returns: an object that implements AdbladeView or nil</p>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -116,57 +124,6 @@
                           <pre class="highlight"><code><span class="k">@objc</span> <span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">createView</span><span class="p">(</span><span class="nv">containerId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">adSize</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">delegate</span><span class="p">:</span> <span class="kt">AdbladeDelegate</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">AdbladeView</span><span class="p">?</span></code></pre>
 
                         </div>
-                      </div>
-                      <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>containerId</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>The container id used to fetch the ads. This should be provided by Adblade.</p>
-
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>adSize</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>The size of the ad that you want to show (e.g. <q>300x250</q>)</p>
-
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>delegate</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>An (optional) implementation of AdbladeDelegate.</p>
-
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                      <div>
-                        <h4>Return Value</h4>
-                        <p>an object that implements AdbladeView or nil</p>
-
                       </div>
                     </section>
                   </div>
@@ -186,6 +143,12 @@
                       <div class="abstract">
                         <p>Create a view for Adblade Ads</p>
 
+<p>:param: containerId The container id used to fetch the ads. This should be provided by Adblade.
+:param: viewType The type of view that you want to show.
+:param: delegate An (optional) implementation of AdbladeDelegate.</p>
+
+<p>:returns: an object that implements AdbladeView or nil</p>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -194,57 +157,6 @@
                           <pre class="highlight"><code><span class="k">@objc</span> <span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">createView</span><span class="p">(</span><span class="nv">containerId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">viewType</span><span class="p">:</span> <span class="kt">AdbladeViewType</span><span class="p">,</span> <span class="nv">delegate</span><span class="p">:</span> <span class="kt">AdbladeDelegate</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">AdbladeView</span><span class="p">?</span></code></pre>
 
                         </div>
-                      </div>
-                      <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>containerId</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>The container id used to fetch the ads. This should be provided by Adblade.</p>
-
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>viewType</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>The type of view that you want to show.</p>
-
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>delegate</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>An (optional) implementation of AdbladeDelegate.</p>
-
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                      <div>
-                        <h4>Return Value</h4>
-                        <p>an object that implements AdbladeView or nil</p>
-
                       </div>
                     </section>
                   </div>
@@ -264,6 +176,12 @@
                       <div class="abstract">
                         <p>Create a view for Adblade Ads</p>
 
+<p>:param: containerId The container id used to fetch the ads. This should be provided by Adblade.
+:param: adType The type of ad that you want to display.
+:param: delegate An (optional) implementation of AdbladeDelegate.</p>
+
+<p>:returns: an object that implements AdbladeView or nil</p>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -272,57 +190,6 @@
                           <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">createView</span><span class="p">(</span><span class="nv">containerId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">adType</span><span class="p">:</span> <span class="kt">AdbladeAdType</span><span class="p">,</span> <span class="nv">delegate</span><span class="p">:</span> <span class="kt">AdbladeDelegate</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">AdbladeView</span><span class="p">?</span></code></pre>
 
                         </div>
-                      </div>
-                      <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>containerId</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>The container id used to fetch the ads. This should be provided by Adblade.</p>
-
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>adType</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>The type of ad that you want to display.</p>
-
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>delegate</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>An (optional) implementation of AdbladeDelegate.</p>
-
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                      <div>
-                        <h4>Return Value</h4>
-                        <p>an object that implements AdbladeView or nil</p>
-
                       </div>
                     </section>
                   </div>
@@ -342,6 +209,11 @@
                       <div class="abstract">
                         <p>Create a view for Adblade Ads</p>
 
+<p>:param: containerId The container id used to fetch the ads. This should be provided by Adblade.
+:param: adType The type of ad that you want to display.</p>
+
+<p>:returns: an object that implements UIView or nil</p>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -351,44 +223,6 @@
 
                         </div>
                       </div>
-                      <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>containerId</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>The container id used to fetch the ads. This should be provided by Adblade.</p>
-
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>adType</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>The type of ad that you want to display.</p>
-
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                      <div>
-                        <h4>Return Value</h4>
-                        <p>an object that implements UIView or nil</p>
-
-                      </div>
                     </section>
                   </div>
                 </li>
@@ -397,8 +231,8 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2015 <a class="link" href="http://www.adblade.com" target="_blank" rel="external">Adblade</a>. All rights reserved. (Last updated: 2015-09-16)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.2.2</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2015 <a class="link" href="http://www.adblade.com" target="_blank" rel="external">Adblade</a>. All rights reserved. (Last updated: 2015-09-17)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.3.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>

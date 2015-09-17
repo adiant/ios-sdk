@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>AdbladeSlideshowView Class Reference</title>
+    <title>AdbladeViewType Enum Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -9,8 +9,8 @@
     <script src="../js/jazzy.js" defer></script>
   </head>
   <body>
-    <a name="//apple_ref/swift/Class/AdbladeSlideshowView" class="dashAnchor"></a>
-    <a title="AdbladeSlideshowView Class Reference"></a>
+    <a name="//apple_ref/swift/Enum/AdbladeViewType" class="dashAnchor"></a>
+    <a title="AdbladeViewType Enum Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html">AdbladeSDK Docs</a> (74% documented)</p>
@@ -20,7 +20,7 @@
       <p id="breadcrumbs">
         <a href="../index.html">AdbladeSDK Reference</a>
         <img id="carat" src="../img/carat.png" />
-        AdbladeSlideshowView Class Reference
+        AdbladeViewType Enum Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -82,14 +82,36 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>AdbladeSlideshowView</h1>
+            <h1>AdbladeViewType</h1>
               <div class="declaration">
                 <div class="Swift">
-                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">AdbladeSlideshowView</span><span class="p">:</span> <span class="kt">UICollectionView</span></code></pre>
+                  <pre class="highlight"><code><span class="k">@objc</span> <span class="kd">public</span> <span class="kd">enum</span> <span class="kt">AdbladeViewType</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
 
                 </div>
               </div>
-            <p>View for slideshow interstitial ads.</p>
+            <p>Different types of views.</p>
+
+<ul>
+<li>banner: allowed ad types
+
+<ul>
+<li>banner</li>
+<li>mediumBanner</li>
+<li>fullBanner</li>
+</ul></li>
+<li>interstitial: allowed ad types
+
+<ul>
+<li>mediumRectangle</li>
+<li>leaderboard</li>
+<li>slideshow</li>
+</ul></li>
+<li>native
+
+<ul>
+<li>native</li>
+</ul></li>
+</ul>
 
           </section>
           <section class="section task-group-section">
@@ -98,9 +120,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FC10AdbladeSDK20AdbladeSlideshowViewcFMS0_FT5coderCSo7NSCoder_GSqS0__"></a>
-                    <a name="//apple_ref/swift/Method/init(coder:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FC10AdbladeSDK20AdbladeSlideshowViewcFMS0_FT5coderCSo7NSCoder_GSqS0__">init(coder:)</a>
+                    <a name="/s:FO10AdbladeSDK15AdbladeViewType6bannerFMS0_S0_"></a>
+                    <a name="//apple_ref/swift/Element/banner" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FO10AdbladeSDK15AdbladeViewType6bannerFMS0_S0_">banner</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -108,16 +130,76 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Constructor</p>
-
-<p>:param: aDecoder</p>
+                        <p>Undocumented</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="Swift">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">required</span> <span class="kd">public</span> <span class="nf">init</span><span class="p">?(</span><span class="n">coder</span> <span class="nv">aDecoder</span><span class="p">:</span> <span class="kt">NSCoder</span><span class="p">)</span></code></pre>
+                          <pre class="highlight"><code><span class="k">@objc</span> <span class="kd">public</span> <span class="kd">enum</span> <span class="kt">AdbladeViewType</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FO10AdbladeSDK15AdbladeViewType12interstitialFMS0_S0_"></a>
+                    <a name="//apple_ref/swift/Element/interstitial" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FO10AdbladeSDK15AdbladeViewType12interstitialFMS0_S0_">interstitial</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="Swift">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">@objc</span> <span class="kd">public</span> <span class="kd">enum</span> <span class="kt">AdbladeViewType</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FO10AdbladeSDK15AdbladeViewType6nativeFMS0_S0_"></a>
+                    <a name="//apple_ref/swift/Element/native" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FO10AdbladeSDK15AdbladeViewType6nativeFMS0_S0_">native</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="Swift">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">@objc</span> <span class="kd">public</span> <span class="kd">enum</span> <span class="kt">AdbladeViewType</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
 
                         </div>
                       </div>

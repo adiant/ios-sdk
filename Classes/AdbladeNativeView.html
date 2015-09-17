@@ -13,8 +13,7 @@
     <a title="AdbladeNativeView Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">AdbladeSDK Docs</a> (98% documented)</p>
-        <p class="header-right"><a href=""><img src="../img/gh.png"/>View on GitHub</a></p>
+        <p><a href="../index.html">AdbladeSDK Docs</a> (74% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -43,9 +42,6 @@
                 <a href="../Classes/AdbladeInterstitialViewController.html">AdbladeInterstitialViewController</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Classes/AdbladeNativeAdapter.html">AdbladeNativeAdapter</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Classes/AdbladeNativeView.html">AdbladeNativeView</a>
               </li>
               <li class="nav-group-task">
@@ -60,13 +56,13 @@
           <a href="../Enums.html">Enums</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Enums.html#/s:O10AdbladeSDK13AdbladeAdType">AdbladeAdType</a>
+                <a href="../Enums/AdbladeAdType.html">AdbladeAdType</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Enums.html#/s:O10AdbladeSDK17AdbladeErrorCodes">AdbladeErrorCodes</a>
+                <a href="../Enums/AdbladeErrorCodes.html">AdbladeErrorCodes</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Enums.html#/s:O10AdbladeSDK15AdbladeViewType">AdbladeViewType</a>
+                <a href="../Enums/AdbladeViewType.html">AdbladeViewType</a>
               </li>
             </ul>
           </li>
@@ -87,6 +83,12 @@
         <section>
           <section class="section">
             <h1>AdbladeNativeView</h1>
+              <div class="declaration">
+                <div class="Swift">
+                  <pre class="highlight"><code><span class="k">@IBDesignable</span> <span class="k">@objc</span> <span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">AdbladeNativeView</span><span class="p">:</span> <span class="kt">UIView</span><span class="p">,</span> <span class="kt">AdbladeView</span><span class="p">,</span> <span class="kt">InternalAdView</span><span class="p">,</span> <span class="kt">UIGestureRecognizerDelegate</span></code></pre>
+
+                </div>
+              </div>
             <p>The implementation of AdbladeView that handles native ads.</p>
 
           </section>
@@ -178,33 +180,6 @@ track Adblade&rsquo;s events. This is optional.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:vC10AdbladeSDK17AdbladeNativeView9adAdapterGSqCS_20AdbladeNativeAdapter_"></a>
-                    <a name="//apple_ref/swift/Property/adAdapter" class="dashAnchor"></a>
-                    <a class="token" href="#/s:vC10AdbladeSDK17AdbladeNativeView9adAdapterGSqCS_20AdbladeNativeAdapter_">adAdapter</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>The exposed native ad for external libraries.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="Swift">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="k">@objc</span> <span class="kd">public</span> <span class="kd">private(set)</span> <span class="k">var</span> <span class="nv">adAdapter</span><span class="p">:</span> <span class="kt">AdbladeNativeAdapter</span><span class="p">?</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
                     <a name="/s:vC10AdbladeSDK17AdbladeNativeView11containerIdGSQSS_"></a>
                     <a name="//apple_ref/swift/Property/containerId" class="dashAnchor"></a>
                     <a class="token" href="#/s:vC10AdbladeSDK17AdbladeNativeView11containerIdGSQSS_">containerId</a>
@@ -245,6 +220,8 @@ track Adblade&rsquo;s events. This is optional.</p>
                         <p>This is called when each element (e.g. title) of the native ad is added
 to the AdbladeView.</p>
 
+<p>:param: subview The subview that was added.</p>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -253,26 +230,6 @@ to the AdbladeView.</p>
                           <pre class="highlight"><code><span class="k">override</span> <span class="kd">public</span> <span class="kd">final</span> <span class="kd">func</span> <span class="nf">didAddSubview</span><span class="p">(</span><span class="nv">subview</span><span class="p">:</span> <span class="kt">UIView</span><span class="p">)</span></code></pre>
 
                         </div>
-                      </div>
-                      <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>subview</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>The subview that was added.</p>
-
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
                       </div>
                     </section>
                   </div>
@@ -292,6 +249,9 @@ to the AdbladeView.</p>
                       <div class="abstract">
                         <p>Resize this properly. </p>
 
+<p>:param: size
+:returns: The size to change that fits the subviews.</p>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -300,30 +260,6 @@ to the AdbladeView.</p>
                           <pre class="highlight"><code><span class="k">override</span> <span class="kd">public</span> <span class="kd">func</span> <span class="nf">sizeThatFits</span><span class="p">(</span><span class="nv">size</span><span class="p">:</span> <span class="kt">CGSize</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">CGSize</span></code></pre>
 
                         </div>
-                      </div>
-                      <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>size</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                      <div>
-                        <h4>Return Value</h4>
-                        <p>The size to change that fits the subviews.</p>
-
                       </div>
                     </section>
                   </div>
@@ -360,8 +296,8 @@ to the AdbladeView.</p>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2015 <a class="link" href="http://www.adblade.com" target="_blank" rel="external">Adblade</a>. All rights reserved. (Last updated: 2015-09-16)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.2.2</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2015 <a class="link" href="http://www.adblade.com" target="_blank" rel="external">Adblade</a>. All rights reserved. (Last updated: 2015-09-17)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.3.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>

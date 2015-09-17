@@ -1,2 +1,24 @@
-AdbladeNativeAdapter.swift
-	@objc public final class AdbladeNativeAdapter
+AdbladeAdType.swift
+	case native = 1
+	case richMediaMediumRectangle = 4
+	case richMediaLeaderboard = 6
+	case mediumRectangle = 14
+	case leaderboard = 15
+	case banner = 77
+	case slideshow = 79
+	case mediumBanner = 83
+	case fullBanner = 84
+AdbladeViewType.swift
+	case banner = 1
+	case interstitial = 2
+	case native = 3
+AdbladeErrorCodes.swift
+	case UnknownError = 1
+	case ParsingError = 2
+	case RequestError = 3
+	case InvalidAdTypeError = 4
+	case NoFill = 5
+	case InvalidViewTypeError = 6
+	case ImageRequestError = 7
+	case InvalidAdSizeError = 8
+	case InvalidInterstitialAdType = 9

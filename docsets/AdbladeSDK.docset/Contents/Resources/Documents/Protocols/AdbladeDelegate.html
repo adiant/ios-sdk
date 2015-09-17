@@ -13,8 +13,7 @@
     <a title="AdbladeDelegate Protocol Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">AdbladeSDK Docs</a> (98% documented)</p>
-        <p class="header-right"><a href=""><img src="../img/gh.png"/>View on GitHub</a></p>
+        <p><a href="../index.html">AdbladeSDK Docs</a> (74% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -43,9 +42,6 @@
                 <a href="../Classes/AdbladeInterstitialViewController.html">AdbladeInterstitialViewController</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Classes/AdbladeNativeAdapter.html">AdbladeNativeAdapter</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Classes/AdbladeNativeView.html">AdbladeNativeView</a>
               </li>
               <li class="nav-group-task">
@@ -60,13 +56,13 @@
           <a href="../Enums.html">Enums</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Enums.html#/s:O10AdbladeSDK13AdbladeAdType">AdbladeAdType</a>
+                <a href="../Enums/AdbladeAdType.html">AdbladeAdType</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Enums.html#/s:O10AdbladeSDK17AdbladeErrorCodes">AdbladeErrorCodes</a>
+                <a href="../Enums/AdbladeErrorCodes.html">AdbladeErrorCodes</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Enums.html#/s:O10AdbladeSDK15AdbladeViewType">AdbladeViewType</a>
+                <a href="../Enums/AdbladeViewType.html">AdbladeViewType</a>
               </li>
             </ul>
           </li>
@@ -87,6 +83,12 @@
         <section>
           <section class="section">
             <h1>AdbladeDelegate</h1>
+              <div class="declaration">
+                <div class="Swift">
+                  <pre class="highlight"><code><span class="k">@objc</span> <span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">AdbladeDelegate</span></code></pre>
+
+                </div>
+              </div>
             <p>This can be used if you want to track any events during the process. All methods are
 optional and you only have to implement what you need.</p>
 
@@ -109,9 +111,9 @@ optional and you only have to implement what you need.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FP10AdbladeSDK15AdbladeDelegate15willSendRequestUS0___FQPS0_FTPS_11AdbladeView_3urlCSo5NSURL_T_"></a>
+                    <a name="/s:FP10AdbladeSDK15AdbladeDelegate15willSendRequestuRq_S0__Fq_FTPS_11AdbladeView_3urlCSo5NSURL_T_"></a>
                     <a name="//apple_ref/swift/Method/willSendRequest(_:url:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FP10AdbladeSDK15AdbladeDelegate15willSendRequestUS0___FQPS0_FTPS_11AdbladeView_3urlCSo5NSURL_T_">willSendRequest(_:url:)</a>
+                    <a class="token" href="#/s:FP10AdbladeSDK15AdbladeDelegate15willSendRequestuRq_S0__Fq_FTPS_11AdbladeView_3urlCSo5NSURL_T_">willSendRequest(_:url:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -136,9 +138,9 @@ optional and you only have to implement what you need.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FP10AdbladeSDK15AdbladeDelegate12didReceiveAdUS0___FQPS0_FPS_11AdbladeView_T_"></a>
+                    <a name="/s:FP10AdbladeSDK15AdbladeDelegate12didReceiveAduRq_S0__Fq_FPS_11AdbladeView_T_"></a>
                     <a name="//apple_ref/swift/Method/didReceiveAd(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FP10AdbladeSDK15AdbladeDelegate12didReceiveAdUS0___FQPS0_FPS_11AdbladeView_T_">didReceiveAd(_:)</a>
+                    <a class="token" href="#/s:FP10AdbladeSDK15AdbladeDelegate12didReceiveAduRq_S0__Fq_FPS_11AdbladeView_T_">didReceiveAd(_:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -147,6 +149,8 @@ optional and you only have to implement what you need.</p>
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>This executes when the ad is successfully received and ready to be shown.</p>
+
+<p>:param: view The AdbladeView that the ad will be shown in.</p>
 
                       </div>
                       <div class="declaration">
@@ -157,35 +161,15 @@ optional and you only have to implement what you need.</p>
 
                         </div>
                       </div>
-                      <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>view</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>The AdbladeView that the ad will be shown in.</p>
-
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FP10AdbladeSDK15AdbladeDelegate12didHaveErrorUS0___FQPS0_FTPS_11AdbladeView_5errorCS_12AdbladeError_T_"></a>
+                    <a name="/s:FP10AdbladeSDK15AdbladeDelegate12didHaveErroruRq_S0__Fq_FTPS_11AdbladeView_5errorCS_12AdbladeError_T_"></a>
                     <a name="//apple_ref/swift/Method/didHaveError(_:error:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FP10AdbladeSDK15AdbladeDelegate12didHaveErrorUS0___FQPS0_FTPS_11AdbladeView_5errorCS_12AdbladeError_T_">didHaveError(_:error:)</a>
+                    <a class="token" href="#/s:FP10AdbladeSDK15AdbladeDelegate12didHaveErroruRq_S0__Fq_FTPS_11AdbladeView_5errorCS_12AdbladeError_T_">didHaveError(_:error:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -194,6 +178,9 @@ optional and you only have to implement what you need.</p>
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>This executes when the ad was not successfully received.</p>
+
+<p>:param: view The AdbladeView that the ad will be shown in.
+:param: error The NSError object that explains what went wrong.</p>
 
                       </div>
                       <div class="declaration">
@@ -204,48 +191,15 @@ optional and you only have to implement what you need.</p>
 
                         </div>
                       </div>
-                      <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>view</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>The AdbladeView that the ad will be shown in.</p>
-
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>error</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>The NSError object that explains what went wrong.</p>
-
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FP10AdbladeSDK15AdbladeDelegate14willShowScreenUS0___FQPS0_FCS_23AdbladeInterstitialViewT_"></a>
+                    <a name="/s:FP10AdbladeSDK15AdbladeDelegate14willShowScreenuRq_S0__Fq_FCS_23AdbladeInterstitialViewT_"></a>
                     <a name="//apple_ref/swift/Method/willShowScreen(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FP10AdbladeSDK15AdbladeDelegate14willShowScreenUS0___FQPS0_FCS_23AdbladeInterstitialViewT_">willShowScreen(_:)</a>
+                    <a class="token" href="#/s:FP10AdbladeSDK15AdbladeDelegate14willShowScreenuRq_S0__Fq_FCS_23AdbladeInterstitialViewT_">willShowScreen(_:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -254,6 +208,8 @@ optional and you only have to implement what you need.</p>
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>This executes immediately before an AdbladeInterstitialView is going to be shown.</p>
+
+<p>:param: view The AdbladeInterstitialView that the ad will be shown in.</p>
 
                       </div>
                       <div class="declaration">
@@ -264,35 +220,15 @@ optional and you only have to implement what you need.</p>
 
                         </div>
                       </div>
-                      <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>view</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>The AdbladeInterstitialView that the ad will be shown in.</p>
-
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FP10AdbladeSDK15AdbladeDelegate17willDismissScreenUS0___FQPS0_FCS_23AdbladeInterstitialViewT_"></a>
+                    <a name="/s:FP10AdbladeSDK15AdbladeDelegate17willDismissScreenuRq_S0__Fq_FCS_23AdbladeInterstitialViewT_"></a>
                     <a name="//apple_ref/swift/Method/willDismissScreen(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FP10AdbladeSDK15AdbladeDelegate17willDismissScreenUS0___FQPS0_FCS_23AdbladeInterstitialViewT_">willDismissScreen(_:)</a>
+                    <a class="token" href="#/s:FP10AdbladeSDK15AdbladeDelegate17willDismissScreenuRq_S0__Fq_FCS_23AdbladeInterstitialViewT_">willDismissScreen(_:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -301,6 +237,8 @@ optional and you only have to implement what you need.</p>
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>This executes immediately before an AdbladeInterstitialView is going to be closed.</p>
+
+<p>:param: view The AdbladeInterstitialView that the ad will be shown in.</p>
 
                       </div>
                       <div class="declaration">
@@ -311,35 +249,15 @@ optional and you only have to implement what you need.</p>
 
                         </div>
                       </div>
-                      <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>view</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>The AdbladeInterstitialView that the ad will be shown in.</p>
-
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FP10AdbladeSDK15AdbladeDelegate16didDismissScreenUS0___FQPS0_FCS_23AdbladeInterstitialViewT_"></a>
+                    <a name="/s:FP10AdbladeSDK15AdbladeDelegate16didDismissScreenuRq_S0__Fq_FCS_23AdbladeInterstitialViewT_"></a>
                     <a name="//apple_ref/swift/Method/didDismissScreen(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FP10AdbladeSDK15AdbladeDelegate16didDismissScreenUS0___FQPS0_FCS_23AdbladeInterstitialViewT_">didDismissScreen(_:)</a>
+                    <a class="token" href="#/s:FP10AdbladeSDK15AdbladeDelegate16didDismissScreenuRq_S0__Fq_FCS_23AdbladeInterstitialViewT_">didDismissScreen(_:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -348,6 +266,8 @@ optional and you only have to implement what you need.</p>
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>This executes immediately after an AdbladeInterstitialView is closed.</p>
+
+<p>:param: view The AdbladeInterstitialView that the ad will be shown in.</p>
 
                       </div>
                       <div class="declaration">
@@ -358,35 +278,15 @@ optional and you only have to implement what you need.</p>
 
                         </div>
                       </div>
-                      <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>view</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>The AdbladeInterstitialView that the ad will be shown in.</p>
-
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
                     </section>
                   </div>
                 </li>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FP10AdbladeSDK15AdbladeDelegate20willLeaveApplicationUS0___FQPS0_FPS_11AdbladeView_T_"></a>
+                    <a name="/s:FP10AdbladeSDK15AdbladeDelegate20willLeaveApplicationuRq_S0__Fq_FPS_11AdbladeView_T_"></a>
                     <a name="//apple_ref/swift/Method/willLeaveApplication(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FP10AdbladeSDK15AdbladeDelegate20willLeaveApplicationUS0___FQPS0_FPS_11AdbladeView_T_">willLeaveApplication(_:)</a>
+                    <a class="token" href="#/s:FP10AdbladeSDK15AdbladeDelegate20willLeaveApplicationuRq_S0__Fq_FPS_11AdbladeView_T_">willLeaveApplication(_:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -397,6 +297,8 @@ optional and you only have to implement what you need.</p>
                         <p>This executes immediately before the user leaves your application. This will
 be run when a tap event occurs on an ad.</p>
 
+<p>:param: view The AdbladeView that the ad will be shown in.</p>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -406,26 +308,6 @@ be run when a tap event occurs on an ad.</p>
 
                         </div>
                       </div>
-                      <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>view</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>The AdbladeView that the ad will be shown in.</p>
-
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
                     </section>
                   </div>
                 </li>
@@ -434,8 +316,8 @@ be run when a tap event occurs on an ad.</p>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2015 <a class="link" href="http://www.adblade.com" target="_blank" rel="external">Adblade</a>. All rights reserved. (Last updated: 2015-09-16)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.2.2</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2015 <a class="link" href="http://www.adblade.com" target="_blank" rel="external">Adblade</a>. All rights reserved. (Last updated: 2015-09-17)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.3.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>
