@@ -1,3 +1,8 @@
+## Version 1.2.2 (September 17, 2016)
+
+- update to Swift 2.0
+- remove unused class
+
 ## Version 1.2.1 (September 16, 2016)
 
 - add close button to ScrollRoll
