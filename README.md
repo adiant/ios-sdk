@@ -8,7 +8,7 @@ You can download [a zipped version of the SDK](https://github.com/adiant/ios-sdk
 
 ## Integrate
 
-Coming Soon
+Check our [quick start guide](https://github.com/adiant/ios-sdk/wiki/Getting-Started) for integration instructions. 
 
 ## Changes
 
