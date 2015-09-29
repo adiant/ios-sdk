@@ -1,4 +1,4 @@
-# Adblade iOS SDK integration with mopub
+# Adblade iOS SDK integration with MoPub
 
 1. Integrate the Adblade iOS SDK into your app
   - For instructions, see our [quick start guide](https://github.com/adiant/ios-sdk/wiki/Getting-Started). 
