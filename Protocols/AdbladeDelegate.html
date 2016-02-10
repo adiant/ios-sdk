@@ -7,6 +7,7 @@
     <meta charset='utf-8'>
     <script src="../js/jquery.min.js" defer></script>
     <script src="../js/jazzy.js" defer></script>
+    
   </head>
   <body>
     <a name="//apple_ref/swift/Protocol/AdbladeDelegate" class="dashAnchor"></a>
@@ -27,7 +28,7 @@
       <nav class="sidebar">
         <ul class="nav-groups">
           <li class="nav-group-name">
-          <a href="../Classes.html">Classes</a>
+            <a href="../Classes.html">Classes</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
                 <a href="../Classes/AdbladeBannerView.html">AdbladeBannerView</a>
@@ -53,7 +54,7 @@
             </ul>
           </li>
           <li class="nav-group-name">
-          <a href="../Enums.html">Enums</a>
+            <a href="../Enums.html">Enums</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
                 <a href="../Enums/AdbladeAdType.html">AdbladeAdType</a>
@@ -67,7 +68,7 @@
             </ul>
           </li>
           <li class="nav-group-name">
-          <a href="../Protocols.html">Protocols</a>
+            <a href="../Protocols.html">Protocols</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
                 <a href="../Protocols/AdbladeDelegate.html">AdbladeDelegate</a>
@@ -84,26 +85,12 @@
           <section class="section">
             <h1>AdbladeDelegate</h1>
               <div class="declaration">
-                <div class="Swift">
+                <div class="language">
                   <pre class="highlight"><code><span class="k">@objc</span> <span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">AdbladeDelegate</span></code></pre>
 
                 </div>
               </div>
-            <p>This can be used if you want to track any events during the process. All methods are
-optional and you only have to implement what you need.</p>
-
-<p>class ViewController: UIViewController, AdbladeDelegate {
-    //&hellip;
-    adbladeView.delegate = self
-    //&hellip;</p>
-
-<pre class="highlight plaintext"><code>func didReceiveAd(view: AdbladeView) {
-    //...
-}
-</code></pre>
-
-<p>}</p>
-
+            
           </section>
           <section class="section task-group-section">
             <div class="task-group">
@@ -126,7 +113,7 @@ optional and you only have to implement what you need.</p>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
-                        <div class="Swift">
+                        <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">willSendRequest</span><span class="p">(</span><span class="nv">view</span><span class="p">:</span> <span class="kt">AdbladeView</span><span class="p">,</span> <span class="nv">url</span><span class="p">:</span> <span class="kt">NSURL</span><span class="p">)</span></code></pre>
 
@@ -155,7 +142,7 @@ optional and you only have to implement what you need.</p>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
-                        <div class="Swift">
+                        <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">didReceiveAd</span><span class="p">(</span><span class="nv">view</span><span class="p">:</span> <span class="kt">AdbladeView</span><span class="p">)</span></code></pre>
 
@@ -185,7 +172,7 @@ optional and you only have to implement what you need.</p>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
-                        <div class="Swift">
+                        <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">didHaveError</span><span class="p">(</span><span class="nv">view</span><span class="p">:</span> <span class="kt">AdbladeView</span><span class="p">,</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">AdbladeError</span><span class="p">)</span></code></pre>
 
@@ -214,7 +201,7 @@ optional and you only have to implement what you need.</p>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
-                        <div class="Swift">
+                        <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">willShowScreen</span><span class="p">(</span><span class="nv">view</span><span class="p">:</span> <span class="kt">AdbladeInterstitialView</span><span class="p">)</span></code></pre>
 
@@ -243,7 +230,7 @@ optional and you only have to implement what you need.</p>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
-                        <div class="Swift">
+                        <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">willDismissScreen</span><span class="p">(</span><span class="nv">view</span><span class="p">:</span> <span class="kt">AdbladeInterstitialView</span><span class="p">)</span></code></pre>
 
@@ -272,7 +259,7 @@ optional and you only have to implement what you need.</p>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
-                        <div class="Swift">
+                        <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">didDismissScreen</span><span class="p">(</span><span class="nv">view</span><span class="p">:</span> <span class="kt">AdbladeInterstitialView</span><span class="p">)</span></code></pre>
 
@@ -302,7 +289,7 @@ be run when a tap event occurs on an ad.</p>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
-                        <div class="Swift">
+                        <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">willLeaveApplication</span><span class="p">(</span><span class="nv">view</span><span class="p">:</span> <span class="kt">AdbladeView</span><span class="p">)</span></code></pre>
 
@@ -316,8 +303,8 @@ be run when a tap event occurs on an ad.</p>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2015 <a class="link" href="http://www.adblade.com" target="_blank" rel="external">Adblade</a>. All rights reserved. (Last updated: 2015-09-17)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.3.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2016 <a class="link" href="http://www.adblade.com" target="_blank" rel="external">Adblade</a>. All rights reserved. (Last updated: 2016-02-10)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.5.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>
