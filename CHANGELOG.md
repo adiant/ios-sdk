@@ -1,4 +1,4 @@
-## Version 1.2.3 (February 10, 2016)
+## Version 1.2.3 (February 10, 2016) and Version 1.2.4 (April 29, 2016)
 
 - more Swift/Xcode updates
 

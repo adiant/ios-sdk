@@ -6,31 +6,31 @@
 	<dict>
 		<key>AdbladeBannerView.nib</key>
 		<data>
-		vRlsEf82geeOdIwh/7UyR8xlK/4=
+		aX+PWlTogTAe8VpcRD3Nb7mT8wo=
 		</data>
 		<key>AdbladeInterstitialView.nib</key>
 		<data>
-		JIf67JC0kdyGWHT1yfmZ97hZ8t8=
+		vHk4WYcvipie1GmwEROPpswuC9c=
 		</data>
 		<key>AdbladeNativeView.nib</key>
 		<data>
-		plSb+lfL8s4JCxLvHG2BjEps4mY=
+		DLWcGaERuvM+4N4vZXDsLp4Ng4E=
 		</data>
 		<key>AdbladeSlideshowView~ipad.nib/objects-8.0+.nib</key>
 		<data>
-		hsLZsg67MNeNM+7/3in4FBOb82c=
+		sSIxIaW4g3mybAn7CeL8g9EkocQ=
 		</data>
 		<key>AdbladeSlideshowView~ipad.nib/runtime.nib</key>
 		<data>
-		S1Zzv316b29sO7NosYIiswlvrsE=
+		ZdW0kHjZOomW6gE7iJ5LGnnOijo=
 		</data>
 		<key>AdbladeSlideshowView~iphone.nib/objects-8.0+.nib</key>
 		<data>
-		UaFYYBcPkRkZrWqs4Fcl8QFNDFA=
+		SEinXHENbH0ixmHvkXODODEpvV4=
 		</data>
 		<key>AdbladeSlideshowView~iphone.nib/runtime.nib</key>
 		<data>
-		RoMBVQvVBgTbV3Fd6FO8K6vzwrQ=
+		GMtCnyjtwesfsb1cqZgobKi8NMM=
 		</data>
 		<key>Debug-Config.plist</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Qv97RjwzlglpctN+f0u5bMv3R/Y=
+		1cfqkOjfNHr1DgxUPA0MZ++jhQY=
 		</data>
 		<key>LICENSE</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Modules/AdbladeSDK.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		NAZ88vSEbkH3X3djwGzXAlp2aPM=
+		N+UnAc9t7DaaGeb2gofxS5nQ+mU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -77,31 +77,31 @@
 	<dict>
 		<key>AdbladeBannerView.nib</key>
 		<data>
-		vRlsEf82geeOdIwh/7UyR8xlK/4=
+		aX+PWlTogTAe8VpcRD3Nb7mT8wo=
 		</data>
 		<key>AdbladeInterstitialView.nib</key>
 		<data>
-		JIf67JC0kdyGWHT1yfmZ97hZ8t8=
+		vHk4WYcvipie1GmwEROPpswuC9c=
 		</data>
 		<key>AdbladeNativeView.nib</key>
 		<data>
-		plSb+lfL8s4JCxLvHG2BjEps4mY=
+		DLWcGaERuvM+4N4vZXDsLp4Ng4E=
 		</data>
 		<key>AdbladeSlideshowView~ipad.nib/objects-8.0+.nib</key>
 		<data>
-		hsLZsg67MNeNM+7/3in4FBOb82c=
+		sSIxIaW4g3mybAn7CeL8g9EkocQ=
 		</data>
 		<key>AdbladeSlideshowView~ipad.nib/runtime.nib</key>
 		<data>
-		S1Zzv316b29sO7NosYIiswlvrsE=
+		ZdW0kHjZOomW6gE7iJ5LGnnOijo=
 		</data>
 		<key>AdbladeSlideshowView~iphone.nib/objects-8.0+.nib</key>
 		<data>
-		UaFYYBcPkRkZrWqs4Fcl8QFNDFA=
+		SEinXHENbH0ixmHvkXODODEpvV4=
 		</data>
 		<key>AdbladeSlideshowView~iphone.nib/runtime.nib</key>
 		<data>
-		RoMBVQvVBgTbV3Fd6FO8K6vzwrQ=
+		GMtCnyjtwesfsb1cqZgobKi8NMM=
 		</data>
 		<key>Debug-Config.plist</key>
 		<data>
@@ -125,7 +125,7 @@
 		</data>
 		<key>Modules/AdbladeSDK.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		NAZ88vSEbkH3X3djwGzXAlp2aPM=
+		N+UnAc9t7DaaGeb2gofxS5nQ+mU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
